@@ -8,7 +8,6 @@ h2 {
     text-align: center;
 }
 
-
 a {
     margin  : 0;
 }
@@ -16,7 +15,12 @@ a {
 .profile {
     display: flex;
     flex-direction: row;    
-    margin-left: 100px;
+}
+
+@media (max-width: 700px) {
+    .profile {
+        flex-direction: column;
+    }
 }
 
 .profile p {
@@ -26,5 +30,6 @@ a {
 
 .profile > picture {
     min-width: 300px;
+    margin: 3rem;
 }
   
