@@ -6,10 +6,6 @@
     --header-font: Consolas, Monaco, Courier New;
 }
 
-/* body {
-    background-color: #B8D8EA;
-} */
-
 header {
     font-family: var(--header-font);
     text-align: center;
@@ -67,6 +63,7 @@ footer nav {
     font-size: 1rem;
     background-color: gray;
     border-radius: 10px;
+    color: black;
     /* text-shadow: 1px 1px 1px #fff; */
 }
 
