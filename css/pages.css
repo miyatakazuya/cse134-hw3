@@ -56,6 +56,7 @@ footer nav {
 
     background-color: darkgray;
     transition: background-color 0.25s 100ms;
+    color: black;
 
     /* transform: background-color 3s 500ms; */
     /* text-shadow: 1px 1px 1px #fff; */
