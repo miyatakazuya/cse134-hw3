@@ -9,7 +9,7 @@ my-project {
     flex-wrap: wrap;
     margin-left: 3rem;  
     margin-right: 3rem;
-    margin-bottom: 3r; 
+    margin-bottom: 3rem; 
 }
 
 my-project > h2 {
@@ -20,6 +20,7 @@ my-project > h2 {
 
 
 my-project > section {
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
 }
@@ -27,6 +28,8 @@ my-project > section {
 @media (max-width: 700px) {
     my-project > section {
       flex-direction: column; 
+      justify-content: space-between;
+      min-height: fit-content;
     }
   }
 
@@ -35,7 +38,17 @@ my-project > section > picture {
     min-width: 300px;
     float: left;
     margin-left: 3rem;
+    margin-right: 3rem;
     margin-bottom: 1rem;
+    object-fit:fill;
+}
+
+@media (max-width: 700px) {
+  my-project > section > picture {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    min-width: 10vh;
+  }
 }
 
 my-project > section > p {
@@ -43,4 +56,14 @@ my-project > section > p {
     margin-left: 50px;
     margin-right: 50px;
     font-size: 1.5rem;
+    align-self: center;
+}
+
+@media (max-width: 700px) {
+  my-project > section > p {
+    margin-left: 25px;
+    margin-right: 25px;
+      font-size: 1rem;
+      /* min-width: 100vh; */
+  }
 }

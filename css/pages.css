@@ -6,6 +6,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+    color: darkslategray;
 }
 
 @media (max-width: 700px) {
@@ -49,14 +50,21 @@ footer nav {
     line-height: 2.5;
     /* padding: 0 20px; */
     font-size: 1rem;
-    background-color: gray;
+    /* background-color: gray; */
     border-radius: 10px;
     text-align: center;
+
+    background-color: darkgray;
+    transition: background-color 0.25s 100ms;
+
+    /* transform: background-color 3s 500ms; */
     /* text-shadow: 1px 1px 1px #fff; */
 }
 
 .main_button:hover {
-    background-color: rgb(102, 99, 99);
+    background-color: white;
+    transform: scale(1.1, 1.1)
+    /* background-color: white; */
 }
 
 .main_button[selected="true"] {
